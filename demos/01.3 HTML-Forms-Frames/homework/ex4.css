@@ -1,0 +1,32 @@
+table {
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+thead, tfoot {
+    background-color: lightgrey;
+    border: 0px;
+}
+thead th {
+    font-weight: normal;
+    text-align: left;
+}
+th {
+    border: 0px;
+}
+td {
+    border: 1px solid grey;
+}
+img { 
+    text-align: center;
+    vertical-align: middle;
+}
+#one { border: 1px solid red;
+}
+#all-items {
+    margin-left: 260px;
+}
+#top-center-cell { text-align: left;
+}
+#tfootH {
+    border-style: hidden;
+}

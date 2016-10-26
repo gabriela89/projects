@@ -1,0 +1,35 @@
+html,
+body,
+div,
+h1,
+ul,
+li,
+a,
+img,
+span {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+}
+body #wrapper {
+  width: 960px;
+}
+body #wrapper div {
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 15px;
+  border: 1px solid black;
+  position: relative;
+  padding: 15px 35px;
+  background: #f9dbff;
+  background: -moz-linear-gradient(top, #DE28FF 15%, #f9dbff 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #DE28FF), color-stop(75%, #f9dbff));
+  background: -webkit-linear-gradient(top, #DE28FF 15%, #f9dbff 75%);
+  background: -o-linear-gradient(top, #DE28FF 15%, #f9dbff 75%);
+  background: -ms-linear-gradient(top, #DE28FF 15%, #f9dbff 75%);
+  background: linear-gradient(to bottom, #DE28FF 15%, #f9dbff 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DE28FF', endColorstr='#f9dbff', GradientType=0);
+}

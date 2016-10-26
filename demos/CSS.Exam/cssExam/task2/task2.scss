@@ -1,0 +1,98 @@
+body, div, form, fieldset, legend, input, label, button {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin linear-gradient($from, $to) {
+  background: $from;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $from), color-stop(50%, $to), color-stop(100%, $to)) goxed;
+  background: -webkit-linear-gradient(top, $from 0%, $to 50%, $to 100%) fixed;
+  background: -o-linear-gradient(top, $from 0%, $to 50%, $to 100%) fixed;
+  background: -ms-linear-gradient(top, $from 0%, $to 50%, $to 100%) fixed;
+  background: inear-gradient(to bottom, $from 0%, $to 50%, $to 100%) fixed;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from}', endColorstr='${to}',GradientType=0 ) fixed;
+}
+
+$general-border: 1px solid black;
+$linear-gradient-from: #e1fc19;
+$linear-gradient-to: #2d5612;
+
+body {
+  font-size: 18px;
+  font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+  color: white;
+  #wrapper {
+    width: 960px;
+    height: 330px;
+    border: $general-border;
+    border-radius: 25px;
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 12%;
+    left: 17%;
+    text-align: right;
+    @include linear-gradient($linear-gradient-from, $linear-gradient-to);
+    form {
+      fieldset {
+        border: 3px outset black;
+        border-radius: 6px;
+        height: 100px;
+        legend {
+          text-align: right;
+          font-size: 1.3em;
+          font-style: italic;
+        }
+        input {
+          position: absolute;
+          right: 25px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          border: 2px outset black;
+          border-radius: 5px;
+          background: linear-gradient($linear-gradient-from, $linear-gradient-to);
+          &:focus {
+            color: white;
+            padding-left: 4px;
+          }
+        }
+        label {
+          position: absolute;
+          right: 217px;
+        }
+      }
+      #radio-yes {
+
+      }
+      #radio-no {
+
+      }
+      button {
+        position: absolute;
+        height: 40px;
+        width: 130px;
+        right: 160px;
+        bottom: 10px;
+        border: 1px outset black;
+        border-radius: 7px;
+        font-size: 0.9em;
+        font-weight: normal;
+        background: linear-gradient($linear-gradient-from, $linear-gradient-to);
+      }
+      input[type="reset"] {
+        position: absolute;
+        height: 40px;
+        width: 130px;
+        right: 10px;
+        bottom: 10px;
+        border: 1px outset black;
+        border-radius: 7px;
+        font-size: 0.9em;
+        font-weight: normal;
+        background: linear-gradient($linear-gradient-from, $linear-gradient-to);
+      }
+
+    }
+  }
+}

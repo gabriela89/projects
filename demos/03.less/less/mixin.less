@@ -1,0 +1,14 @@
+.float {
+    float: left;
+    width: 50%
+}
+.clearfix {
+    zoom: 1;
+    &:after {
+    display: block; content:"";
+    height:0; clear: both;
+    }
+}
+ul#main-nav {
+    .clearfix;
+}

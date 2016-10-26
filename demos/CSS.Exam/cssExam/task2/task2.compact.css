@@ -1,0 +1,19 @@
+body, div, form, fieldset, legend, input, label, button { margin: 0; padding: 0; }
+
+body { font-size: 18px; font-family: Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif; color: white; }
+
+body #wrapper { width: 960px; height: 330px; border: 1px solid black; border-radius: 25px; position: absolute; padding-top: 20px; padding-left: 10px; padding-right: 10px; top: 12%; left: 17%; text-align: right; background: #e1fc19; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1fc19), color-stop(50%, #2d5612), color-stop(100%, #2d5612)) goxed; background: -webkit-linear-gradient(top, #e1fc19 0%, #2d5612 50%, #2d5612 100%) fixed; background: -o-linear-gradient(top, #e1fc19 0%, #2d5612 50%, #2d5612 100%) fixed; background: -ms-linear-gradient(top, #e1fc19 0%, #2d5612 50%, #2d5612 100%) fixed; background: inear-gradient(to bottom, #e1fc19 0%, #2d5612 50%, #2d5612 100%) fixed; filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='${from}', endColorstr='${to}',GradientType=0 ) fixed; }
+
+body #wrapper form fieldset { border: 3px outset black; border-radius: 6px; height: 100px; }
+
+body #wrapper form fieldset legend { text-align: right; font-size: 1.3em; font-style: italic; }
+
+body #wrapper form fieldset input { position: absolute; right: 25px; margin-top: 5px; margin-bottom: 5px; border: 2px outset black; border-radius: 5px; background: linear-gradient(#e1fc19, #2d5612); }
+
+body #wrapper form fieldset input:focus { color: white; padding-left: 4px; }
+
+body #wrapper form fieldset label { position: absolute; right: 217px; }
+
+body #wrapper form button { position: absolute; height: 40px; width: 130px; right: 160px; bottom: 10px; border: 1px outset black; border-radius: 7px; font-size: 0.9em; font-weight: normal; background: linear-gradient(#e1fc19, #2d5612); }
+
+body #wrapper form input[type="reset"] { position: absolute; height: 40px; width: 130px; right: 10px; bottom: 10px; border: 1px outset black; border-radius: 7px; font-size: 0.9em; font-weight: normal; background: linear-gradient(#e1fc19, #2d5612); }

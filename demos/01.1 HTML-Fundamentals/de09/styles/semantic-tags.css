@@ -1,0 +1,41 @@
+#header, header
+{
+  text-align:center;
+}
+#navigation ul, nav ul
+{
+  list-style-type: none;
+  dispaly:block;
+}
+#navigation ul li, nav ul li
+{float:right;
+  margin: 30px;
+  padding: 40px;
+
+}
+#navigation ul:after, nav ul:after
+{
+  clear:both;
+display: block;
+content:"";
+}
+#sidebar, aside
+{
+  float:left;
+  width:10%;
+}
+#sidebar ul li, aside ul li
+{
+  font-size:1.5em;
+  margin:5px;
+  padding:5px;
+}
+#content, section
+{
+  display: block;
+  width: 85%;
+}
+#footer, footer
+{
+  text-align:block;
+}

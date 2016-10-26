@@ -1,0 +1,17 @@
+thead tr th {
+    border: 2px inset;
+    font-size: 25px;
+}
+.price {
+    text-align: center;
+}
+.range {
+    font-size: 25px;
+}
+.rangers td {
+    padding: 30px;
+}
+.macbooks, .rangers {
+    border: 1px inset;
+    font-weight: bold;
+}

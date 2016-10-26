@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            tfoot {
+                text-align:center;
+                background-color: lightgreen;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <form>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td><label fname="name">Last name</label></td>
+                    <td><input type="text" name="fname" id="fname" placeholder="Nakov"></td>
+                </tr>
+                
+                <tr>
+                    <td><label fname="name">First Name</label></td>
+                    <td><input type="text" name="fname" id="fname" placeholder="Svelin"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="name">Address</label></td>
+                    <td><textarea placeholder="17 Hristo Botev Str. floor 3. apt. 12"></textarea> </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="name">City</label></td>
+                    <td><input type="text" name="fname" id="fname" placeholder="Kaspchan">
+                    <label fname="name">State </label><input type="text" name=""/></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="name">Zip/Postal Code</label></td>
+                    <td><input type="number" placeholder="9325"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="name">Country</label></td>
+                    <td>
+                    <select name="Country" od="Country">
+                        <option value="Bu">Bulgaria</option>
+                        <option value="Ro">Romania</option>
+                    
+                    </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="name">Phone (country code,<br/> area code, number)</label></td>
+                    <td>(+<input id="telInput" type="tel" pattern="359"placeholder="359"/> ) <input id="telInput" type="tel" pattern="88" placeholder="88"/>-<input id="telInput" type="tel" pattern="8334343" placeholder="8334343" </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="email">E-mail</label></td>
+                    <td><input id="emailInput" type="email" required="true" placeholder="nakov@kaspichan.org"/></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="Bd">Birth date</label></td>
+                    <td>Month<input type="number" placeholder="06" size="2" />Day<input type="number" size="6" placeholder="14"/>Year(4digit) <input type="number" placeholder="1980"/></td>
+                </tr>
+                <tr>
+                    <td><label for="Gender">Gender</label></td>
+                    <td><select name="Gender" odd="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Starting date</label></td>
+                    <td>
+                         <input name="name" type="radio" id="gm" value="m" />
+                <label for="name">Spring 2006</label>
+                <input name="name" type="radio" id="gf" value="f" />
+                <label for="gf">Summer 2006</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="name"> Comments/Questions</label></td>
+                    <td><textarea placeholder="Plsease send me nor information about the lodging."></textarea> </textarea></td>
+                </tr>
+                <tfoot>
+                    <tr>
+                    <td colspan="2"><input type="submit" name="submit" value="Submit" />
+                    <input type="reset" value="Clear This Form" /></td>
+                    </tr>
+                </tfoot>
+                
+            </tbody>
+        </table>
+        </form>
+    </body>
+</html>

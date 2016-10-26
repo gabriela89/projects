@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    line-height: 20px;
+}
+
+#content {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin-left: -15;
+    font-size: 12px;
+}
+
+a {
+    font-size: 14px;
+    color: #C36A71;
+}
+
+h5 {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+ul li {
+    margin-left: -5px;
+    font-size: 12px;
+}
+
+#leftH {
+    float: left;
+    font-size: 11;
+    margin-top: 40px;
+    line-height: 15px;
+}
+
+#rightH {
+    float: left;
+    margin-left: 40px;
+}

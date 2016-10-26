@@ -1,0 +1,10 @@
+.hlist {
+  list-style-type: none;
+}
+.hlist .list-item {
+  float: left;
+  border-right: 1px solid #ccc;
+}
+.hlist .list-item:last-of-type {
+  border-right: none;
+}

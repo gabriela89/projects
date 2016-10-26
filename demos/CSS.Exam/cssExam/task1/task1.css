@@ -1,0 +1,128 @@
+body,
+html,
+div,
+h1,
+ul,
+li,
+span,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', sans-serif;
+}
+body #wrapper {
+  width: 960px;
+  height: 630px;
+  border: 1px solid black;
+  border-radius: 25px;
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 12%;
+  left: 17%;
+  background: #b6b994;
+  background: -moz-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #fff), color-stop(75%, #b6b994));
+  background: -webkit-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: -o-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: -ms-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: linear-gradient(to bottom, #fff 15%, #b6b994 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#b6b994', GradientType=0);
+}
+body #wrapper div h1 {
+  text-align: center;
+  color: #3f3d3d;
+}
+body #wrapper div ul.messages-list {
+  list-style-type: none;
+  display: block;
+}
+body #wrapper div ul.messages-list li.me-item {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 500px;
+  margin: 10px 10px 10px 0px;
+  padding: 15px 15px;
+  float: right;
+  clear: both;
+  background: #baedfa;
+  background: -moz-linear-gradient(top, #23e8ef 15%, #baedfa 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #23e8ef), color-stop(75%, #baedfa));
+  background: -webkit-linear-gradient(top, #23e8ef 15%, #baedfa 75%);
+  background: -o-linear-gradient(top, #23e8ef 15%, #baedfa 75%);
+  background: -ms-linear-gradient(top, #23e8ef 15%, #baedfa 75%);
+  background: linear-gradient(to bottom, #23e8ef 15%, #baedfa 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23e8ef', endColorstr='#baedfa', GradientType=0);
+}
+body #wrapper div ul.messages-list li.me-item span {
+  font-weight: bold;
+}
+body #wrapper div ul.messages-list li.me-item .date {
+  display: block;
+  text-align: right;
+  font-weight: normal;
+}
+body #wrapper div ul.messages-list li.toshko-item {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 500px;
+  margin: 0px 10px 10px 10px;
+  padding: 15px 15px;
+  float: left;
+  clear: both;
+  background: #33ff62;
+  background: -moz-linear-gradient(top, #a2f2a3 15%, #33ff62 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #a2f2a3), color-stop(75%, #33ff62));
+  background: -webkit-linear-gradient(top, #a2f2a3 15%, #33ff62 75%);
+  background: -o-linear-gradient(top, #a2f2a3 15%, #33ff62 75%);
+  background: -ms-linear-gradient(top, #a2f2a3 15%, #33ff62 75%);
+  background: linear-gradient(to bottom, #a2f2a3 15%, #33ff62 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a2f2a3', endColorstr='#33ff62', GradientType=0);
+}
+body #wrapper div ul.messages-list li.toshko-item span {
+  font-weight: bold;
+}
+body #wrapper div ul.messages-list li.toshko-item .date {
+  display: block;
+  text-align: right;
+  font-weight: normal;
+}
+body #wrapper div input {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  clear: both;
+  width: 600px;
+  padding: 30px 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+body #wrapper div input:focus {
+  color: gray;
+}
+body #wrapper div button {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 10px;
+  bottom: 10px;
+  right: 60px;
+  height: 77px;
+  width: 180px;
+  background: #b6b994;
+  background: -moz-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #fff), color-stop(75%, #b6b994));
+  background: -webkit-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: -o-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: -ms-linear-gradient(top, #fff 15%, #b6b994 75%);
+  background: linear-gradient(to bottom, #fff 15%, #b6b994 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#b6b994', GradientType=0);
+}
+body #wrapper div button:hover {
+  background: white;
+}

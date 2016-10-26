@@ -1,0 +1,15 @@
+.mymixin(@colormixin) {
+    padding: 50px;
+    border: 1px solid @colormixin;
+    width: 25%;
+    
+}
+h3 {
+    .mymixin(#ccc)
+    &:hover;@colormixin {
+        transform: rotate(90%);
+    }
+}
+h4 {
+    .mymixin(#aaa);
+}

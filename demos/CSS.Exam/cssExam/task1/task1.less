@@ -1,0 +1,111 @@
+// out: task1.css
+body, html, div, h1, ul, li, span, p, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+  background: @to-color;
+  background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+  background: -webkit-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+  background: -o-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+  background: -ms-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+  background: linear-gradient(to bottom, @from-color @from-pos, @to-color @to-pos);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+
+
+@general-border: 1px solid black;
+
+body {
+  font-size: 16px;
+  font-family:  Arial, 'DejaVu Sans', 'Liberation Sans', sans-serif;
+    #wrapper {
+      width: 960px;
+      height: 630px;
+      border: @general-border;
+      border-radius: 25px;
+      position: absolute;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      top: 12%;
+      left: 17%;
+      .linear-gradient(#fff, 15%,lighten(#a1a575,10%),75%);
+      div {
+        h1 {
+          text-align: center;
+          color: #3f3d3d;
+        }
+        ul.messages-list{
+          list-style-type: none;
+          display: block;
+          li.me-item {
+            border: @general-border;
+            border-radius: 25px;
+            width: 500px;
+            margin: 10px 10px 10px 0px;
+            padding: 15px 15px;
+            float: right;
+            clear: both;
+            .linear-gradient(#23e8ef, 15%,lighten(#73daf4,15%),75%);
+            span {
+              font-weight: bold;
+            }
+            .date {
+              display: block;
+              text-align: right;
+              font-weight: normal;
+            }
+
+
+          }
+          li.toshko-item {
+            border: @general-border;
+            border-radius: 25px;
+            width: 500px;
+            margin: 0px 10px 10px 10px;
+            padding: 15px 15px;
+            float: left;
+            clear: both;
+            .linear-gradient(#a2f2a3, 15%,lighten(#00ff3b,10%),75%);
+            span {
+              font-weight: bold;
+            }
+            .date {
+              display: block;
+              text-align: right;
+              font-weight: normal;
+            }
+          }
+        }
+        input {
+          position: absolute;
+          bottom: 10px;
+          left: 50px;
+          clear: both;
+          width: 600px;
+          padding: 30px 30px;
+          border: @general-border;
+          border-radius: 10px;
+          &:focus {
+            color: gray;
+          }
+        }
+        button {
+          position: absolute;
+          border: @general-border;
+          border-radius: 10px;
+          bottom: 10px;
+          right: 60px;
+          height: 77px;
+          width: 180px;
+          .linear-gradient(#fff, 15%,lighten(#a1a575,10%),75%);
+          &:hover {
+            background: white;
+          }
+        }
+      }
+    }
+}

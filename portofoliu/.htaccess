@@ -1,0 +1,4 @@
+AuthUserFile "D:/Web/portofoliu/.htpasswd"
+AuthName "Mesaj"
+AuthType Basic
+require user gabriela

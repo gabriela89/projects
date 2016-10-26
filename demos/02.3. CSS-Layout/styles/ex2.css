@@ -1,0 +1,71 @@
+body {
+    font-family: Arial;
+    font-weight: 300;
+}
+nav {
+    text-align: center;
+    font-size: 1.4em;
+}
+header {
+    padding: 20px;
+}
+hr {
+    width: 87%;
+}
+a {
+    color: #11b4f0;
+    font-weight: bold;
+}
+
+fieldset {
+    width: 40%;
+    float: left;
+    
+}
+section {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.c3 {
+    padding: 7px 7px;
+    width: 464px;
+    height: 415px;
+    border: 1px solid gray;
+}
+.c1 {
+    float: left;
+    width: 500px;
+    
+}
+.c2 {
+    float: left;
+    width:50;
+}
+.floatL {
+    float: left;
+    width: 50%;
+}
+.floatR {
+    float: left;
+    width: 50%;
+}
+#padding {
+    margin-left: 25px;
+    padding-top: 70px;
+    font-size: 1.4em;
+}
+.divs {
+    margin: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+

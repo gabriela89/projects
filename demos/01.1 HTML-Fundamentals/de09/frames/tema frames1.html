@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Web Frames</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <!--[if It IE 9]>
+    <script src='http;//html7shiv.googlecode.com/svn/trunk/html.js></script>'
+    <![endif]-->
+  </head>
+  <body>
+    <form>
+<table border="1">
+  <tfoot>
+    <tr>
+      <td colspan="2">
+        <input type="submit" name="submitButton" value="Submit"/>
+        <input type="reset" name="ClearButton" value="Reset This Form"/>
+      </td>
+    </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>
+          <span class="InputName">Last Name</span> </td>
+          <td> <input type="text" name="Last name" placeholder="Nakow"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="InputName">First Name</span></td>
+          <td>
+          <input type="text" name="First Name" placeholder="Svetlin"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="InputName">Address</span></td>
+          <td>
+          <input type="text" name="address" placeholder="17 Bristo"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="InputName">City</span></td>
+          <td>
+          <input type="text" name="City" placeholder="Kaspichan"/>
+
+
+          <span class="InputName">State</span>
+  <input type="text" name="City"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="InputName">Zip/Postal code</span></td>
+          <td>
+          <input type="text" name="zip-code" placeholder="9325" pattern="\d{3,}"/>
+        </td>
+      </tr>
+      <td class="InputName">Country</td>
+      <td>
+        <select>
+          <option selected>USA</option>
+          <option selected>Bulgaria</option>
+        </select></td>
+      </tr>
+
+      <tr>
+        <td class="InputName">Phone(country code,area code,number)</td>
+        <td>
+          (+
+          <input type="text"name="First-three"placeholder="359" maxlength="3" pattern="\d{3}"/>)
+          <input type="text"name="Next-two"placeholder="88" maxlength="2" pattern="\d{2}"/>
+          <input type="text"name="last-seven"placeholder="8334343" maxlength="7" pattern="\d{7}"/>
+
+        </td>
+      </tr>
+      <tr>
+
+          <td class="Input name">E-mail</td>
+          <td><input type="e-mail" name="e-mail" placeholder=""/>
+    </td>
+  </tr>
+
+   <tr>
+
+       <td class="InputName">Birth date</label></td>
+       <td>
+
+         Mounth
+         <input type="text"name="mounth" placeholder="06"maxlength="2" pattern="\d{1,}"/>
+        Day
+         <input type="text"name="day" placeholder="14"maxlength="2" pattern="\d{1,}"/>
+         Year(4 digit)
+          <input type="text"name="year" placeholder="1980"maxlength="4" pattern="\d{4,}"/>
+       </td>
+     </tr>
+     <tr>
+       <td class="InputName">Gender</td>
+       <td>
+
+         <select>
+           <option selected>Male</option>
+ <option selected>Female</option>
+
+           </option>
+         </select>
+         </td>
+       </tr>
+       <tr>
+         <td class="InputName">starting date</td>
+       <td>
+<input type="radio" id="spring" name="starting date"/>
+<label for="spring">Spring 2006</label>
+<input type="radio" id="Summer" name="starting date"/>
+<label for="summer">Summer 2006</label></td>
+
+              </tr>
+       <tr>
+         <td class="InputName">Comments/Questions</td>
+         <td><textarea name="comments" placeholder="Please send me more information about the logging"></textarea>
+
+       </td>
+
+         </tr>
+       </tbody>
+
+
+</table>
+</form>
+
+  </body>
+</html>

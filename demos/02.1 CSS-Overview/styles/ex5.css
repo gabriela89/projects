@@ -1,0 +1,32 @@
+body {
+    background-color: #b7b6b5;
+}
+nav, li, body > header, a {
+    color: white;
+    text-align: center;
+    list-style-type: none;
+}
+header {
+    color: white;
+}
+footer {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+#has {
+    background-color: #c9c8c7;
+}
+#underline {
+    text-decoration: underline;
+}
+.c1 {
+    font-size: 60%;
+}
+.c2 {
+    background-color: white;
+    position: absolute;
+    left: 1px;
+    font-size: 60%;
+}

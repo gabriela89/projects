@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        table{ border: solid black 1px}
+        tr:nth-child(2n){
+            background-color: lime;
+        }
+        tr:nth-child(2n+1){
+            background-color: #63acff;
+        }
+        tr:nth-child(1){color:white;
+        background-color:green;
+        }
+        tr:nth-last-child(1),tr:nth-last-child(2),tr:nth-last-child(3),tr:nth-last-child(4){
+            color:white;
+            background-color: darkblue;
+        }
+        tr:last-child{
+            color: beige;
+            background-color: aquamarine;
+        }
+        tr[tag*="Exams"]{
+            color: darkcyan;
+            background-color: darkslategray;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<table>
+    <tr>
+        <th>Lecture</th><th>Files</th>
+    </tr>
+    <tr><td>0. Course Introduction</td> <td>00. Fundamentals-of-CS-Course
+    <br/>IT Academy Graduation Season<br/></td></tr>
+   <tr><td>1.Introduction to programming</td><td>0.1introduction</br>
+       0.1 intro</br></td></tr>
+<tr><td>2.Primitive data</td><td>0.2 primitive data and variables</br>
+    0.2 primitive  data</br></td></tr>
+<tr><td>3.Operators,Expressions</td><td>0.3 Console input</br>
+    0.3 Console demos.zip</br></td></tr>
+<tr><td>4.console input</td><td>0.4console input.pptx</br>
+    0.4 console-demos.zip</br></td></tr>
+    <tr><td>5.Exceptions handling</td><td>0.5 exception handling.pptx</br></td></tr>
+<tr><td>6.loops</td><td>0.6loops.pptx</br>
+
+    0.6 loops-demos.zip</br></td></tr>
+<tr tag="Sample Intermediate Exams"><td>Sample Intermediate Exams</td> <td>CSharp-Fundamentals.docx<br/>CSarp-Fundamentals var2</br>
+CSarp fundamentals var3.docx<br/></td></tr>
+<tr tag="Intermediate Exams"><td>Sample Intermediate Exams</td> <td>Intermediate Exams.docx<br/>CSarp-Fundamentals var9.doc</br>
+    CSarp fundamentals var10.doc<br/></td></tr>
+<tr><td>7.recursion</td><td>0.7recursion.pptx</br>
+    0.7 recursion-demos.zip</br></td></tr>
+<tr><td>8.recursion</td><td>0.8recursion.pptx</br>
+    0.8 recursion-demos.zip</br></td></tr>
+
+</table>
+
+</body>
+</html>

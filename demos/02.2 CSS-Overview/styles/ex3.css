@@ -1,0 +1,131 @@
+body {
+    color: white;
+    background: -webkit-linear-gradient(top, rgba(228,245,252,1) 0%,rgba(202,142,245,1) 0%,rgba(146,21,242,1) 37%);
+    background: -moz-linear-gradient(top, rgba(202,142,245,1) 9%, rgba(146,21,242,1) 54%);
+    background: -o-linear-gradient(top, rgba(202,142,245,1) 9%, rgba(146,21,242,1) 54%);
+    background: -ms-linear-gradient(top, rgba(202,142,245,1) 9%, rgba(146,21,242,1) 54%);
+    
+}
+body header ul li {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body header li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+} 
+nav {
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 73%;
+    margin-left: 20px;
+    clear: both;
+}
+section article {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 10px;
+    margin-left: 0;
+}
+section article h3 {
+    margin-left: 5px;
+}
+aside div {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 8px;
+}
+section {
+    float: left;
+    width: 65%;
+    margin: 12px;
+}
+aside {
+    float: left;
+    width: 32%;
+    margin-top: 35px;
+}
+aside ul {
+    list-style-image: url(../images/punct.png);
+}
+footer > p {
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+input {
+    margin: 3px;
+}
+span  {
+    color: lightgray;
+}
+i {color: lightgray;}
+.right {
+    text-align: right;
+}
+@font-face {
+    font-family: Sample;
+    src: url(../fonts/KrinkesDecorPERSONAL.ttf);
+}
+#sample {
+    font-family: Sample;
+    font-size: 38px;
+}
+.logo {
+   float: left;
+   position: relative;
+}
+.form {
+    float: right;
+    position: relative;
+    margin-right: 70px;
+    margin-top: 15px;
+}
+#button {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    border: 2px solid ;
+    border-color: #bb90dc;
+    border-style: outset;
+    border-radius: 8px;
+    padding: 5px 8px;
+    background: -webkit-linear-gradient(left top, #bb85ea, #9e5ed6);
+    color: white; 
+}
+.casute {
+    border: 1px solid rgb(125, 52, 181);
+    border-radius: 8px;
+    background-color: rgb(179, 94, 243);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

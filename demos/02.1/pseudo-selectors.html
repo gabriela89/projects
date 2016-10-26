@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo selectors</title>
+    <style>
+
+        header nav ul{list-style-type: none;}
+        header nav ul li a{text-decoration: none}
+        header nav ul li a:hever{text-decoration: underline}
+        section article header h1:before{content: "<<"}
+        section article header h1:after{content:">>"}
+        section article p:first-letter{
+            font-size: 1.7em;
+            font-family: "old English Text MT";
+        }
+        section article p:first-line{
+            color: green;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#"> item 1</a>
+
+            </li>
+            <li>
+                <a href="#"> item 2</a>
+            </li>
+            <li>
+            <a href="#"> item 3</a>
+            </li>
+            <li>
+            <a href="#"> item 4</a>
+            </li>
+            <li>
+            <a href="#"> item 5</a>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+<section>
+    <article>
+        <header>
+            <h1><em>Lorem ipsum </em>dolor sit amet, consectetur adipisicing elit. Aut beatae commodi culpa cumque dolorum ducimus eligendi in ipsam laboriosam laudantium libero molestias nam, nobis quisquam saepe sequi similique ut vitae!</h1>
+        </header>
+        <p><em>Lorem ipsum</em> dolor sit amet, consectetur adipisicing elit. Dicta, quae sit? Aliquam at commodi culpa, dolor doloremque ducimus earum error ex ipsum natus nesciunt non odit quod repellat sit, voluptatibus!</p>
+    </article>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+#header,h1
+
+ {
+  position: absolute;
+  text-align: center;
+}
+#navigation ul li, nav ul li
+{float:right;
+  margin: 30px;
+  padding: 40px;
+
+}

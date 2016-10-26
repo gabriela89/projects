@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(97, 153, 204);
+    height: 1500px;
+}
+ul li {
+    list-style-type: none;
+    margin-left: -35px
+}
+a {
+    text-decoration: none;
+}
+h2, h4 {
+    color: white;
+}
+footer {
+    color: white;
+    clear: both;
+    text-align: center;
+    padding-top: 15px;
+}
+th, td {
+    padding: 0px;
+    padding-top: 0px
+}
+#mother-div {
+    position: relative;
+    left: 10%;
+    top: 10px;
+    width: 80%;
+    height: 800px;
+    background-color: rgb(156, 206, 255);
+    text-align: center;
+    border: 1px solid gray;
+}
+div#div1 h2 {
+    padding-top: 80px;
+}
+#div1{
+    height: 180px;
+}
+#div2 {
+    background-color: rgb(49, 99, 154);
+    border-style: inset ;
+    margin: 0px;
+}
+#div3 { 
+    
+}
+#center-heading {
+    
+}
+div.db h4, p {
+    padding-left: 45px;
+    padding-right: 40px;
+}
+.da {
+    float: left;
+    margin: 50px 30px 30px 30px;
+    height: 300px;
+    width: 230px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.db {
+    float:left;
+    margin: 30px 20px 30px 20px;
+    height: 380px;
+    width: 420px;
+    background-color: white;
+    border: 1px solid gray;
+    
+}
+.dc {
+    float: left;
+    margin: 50px 30px 30px 30px;
+    height: 300px;
+    width: 230px;
+    background-color: white;
+    border: 1px solid gray;
+}
+.heading {
+    background-color: #1B2E5D;
+    color: white;
+    margin-top: 0px;
+}

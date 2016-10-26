@@ -1,0 +1,31 @@
+@border-side:top;
+@border-color:blue;
+@border-style:ridge;
+@border-width:15px;
+div {
+    border-@{border-side}:
+    @border-width @border-style @border-color;
+}
+nav ul {
+    &:extend(.inline);
+    background-color: blue;
+}
+.inline {
+    color: red;
+}
+@color: #fff0ff;
+    p {
+        background-color:lighten(@color, 50%);
+        color: darken(@color, 35%);
+        width: percentage(0.5); 
+}
+.clearfix {
+    zoom: 1;
+    &:after; {
+    display: block; content:"";
+    height:0; clear: both;
+    }
+}
+ul#main-nav {
+    .clearfix;
+}

@@ -1,0 +1,30 @@
+header, nav {
+    background-color: black;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+    color: white;
+}
+ 
+aside {
+    float: right ;
+    width: 20%;
+    background-color: lightgrey;
+}
+section {
+    float: left;
+    width: 80;
+}
+footer {
+    color: white;
+    background-color: black;
+    clear: both;
+}
+a:link {
+    color: grey;
+}
+a:hover {
+    color: blue;
+}
