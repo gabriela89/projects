@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .gradient-border{
+            border: 18px solid #000;
+            -moz-border-bottom-colors: #000000 #50177d #0000FF #0c0c56 #00ff3b #0000FF #0B6F0B ;
+            -moz-border-top-colors: #0c0c56 #0000FF #0d9b9b #00ff00 #0c0c56 #0B6F0B #0C000B #00ff00;
+            -moz-border-left-colors: #0000FF #00AEF0 #0C000B #0000FF #00AEF0 #0d9b9b #0d9b9b;
+            -moz-border-right-colors: #00AEF0 #0F4D85 #000000 #00ff3b #2d5612 #000000 #0d9b9b;
+        }
+        .box{
+            height: 500px;
+            width: 25%;
+            background-color: #808080;
+            padding: 5px;
+            margin: 15px;
+            -moz-box-shadow: 10px 10px 5px #4481d5;
+            -webkit-box-shadow: 10px 10px 5px #4481d5;
+            box-shadow: 10 px 10 px 5px #4481d5;
+        }
+        .left-floated{
+            float: left;
+        }
+        .corner-radius{
+            border: 18px solid #000;
+            border-radius: 15px 15px 15px 1px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box gradient-border left floated"></div>
+<div class="box corner-radius gradient-border left-floated"></div>
+<div class="corner-radius box left-floated"></div>
+</body>
+</html>
