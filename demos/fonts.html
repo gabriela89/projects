@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face{
+            font-family: SketchRockwell;
+            src: url('SketchRockwell-Bold.ttf');
+
+        }
+        h1{
+            font-family: SketchRockwell;
+            font-size: 3.7em;
+            font-weight: normal;
+            text-shadow: 2px 5px 27px rgba(178,0,255,0.78);
+        }
+        h2{
+            font: normal 3em Consolas;
+        }
+        .box{
+            height: 100px;
+            width: 300px;
+            overflow: hidden;
+            white-space: nowrap;
+            border: 1px solid black;
+        }
+        .overflow-ellipsis{
+            text-overflow-ellipsis: ellipsis;
+            overflow: auto;
+        }
+        .overflow-clip{
+            text-overflow: clip;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>ITacad Software Academy</h1>
+<h2>Normal text</h2>
+<p class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti dolorem dolores, esse ex hic ipsam iste laborum neque nulla numquam placeat possimus praesentium quaerat quam quod unde voluptate voluptatem!</p>
+<h2>box-overflow:elipsis</h2>
+<p class="box overflow-ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consectetur, distinctio eos inventore necessitatibus nisi obcaecati recusandae rem tenetur totam velit voluptatum. Animi aut eius ipsa modi quidem vero.</p>
+<h2>box-overflow-clip</h2>
+<p class="box overflow-clip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium consequuntur debitis, deserunt eius fugiat id in laborum, minus, molestias natus nemo officiis optio quia quod repellat unde ut voluptate!</p>
+
+
+</body>
+</html>
