@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="exchange"></p>
+<script>
+    var amount_from=window.prompt("How many euros are you exchanging? ");
+    var rate_from=window.prompt("What is the exchange rate?");
+    var rate= Math.ceil(137,51);
+
+    var rate_to= fx.convert(amount_from,{from: "EURO", to: "U.S. dollars"});
+    var amount_to=(amount_from*rate)/rate_to;
+    document.getElementById("exchange").innerHTML="How many euros are you exchanging?" +amount_from+ "<br/>"+"What is the exchange rate?" +rate_from+"<br/>"+amount_from +"euro at an exchange rate of"+rate_from+ "is"+ amount_to+"U.S dollars";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="paint"></p>
+<p id="cerc"></p>
+<p id="l"></p>
+<script>
+    var length_input=window.prompt("What is the length of the ceiling in metters");
+    var width_input=window.prompt("What is the width of the ceiling in metters?");
+
+    const METTER_TO_FEET=Math.ceil(0.09290304);
+    var length_in_metters= parseInt(length_input);
+    var width_in_metters= parseInt(width_input);
+
+    var area_in_metters= (length_in_metters* width_in_metters);
+    var area_in_feet= (area_in_metters * METTER_TO_FEET);
+
+    document.getElementById("paint").innerHTML= "You have"+ area_in_feet;
+
+        if(area_in_feet >350){
+            document.write("You will need to purchase 2 gallons of paint to cover 360 square feet.")
+        }
+        else{
+            document.write("You will need to purchase 1 gallon of paint to cover 360 square feet.")
+        }
+
+
+Challenges
+    var lungime=window.prompt("Care este lungimea cercului?")
+    var PI=3.14159265359;
+    var raza=length/2*PI;
+    var aria_cercului=PI*raza*raza;
+    document.getElementById("cerc").innerHTML= "You have"+ aria_cercului;
+
+    if(aria_cercului >350){
+        document.write("You will need to purchase 2 gallons of paint to cover 360 square feet.")
+    }
+    else{
+        document.write("You will need to purchase 1 gallon of paint to cover 360 square feet.");
+    }
+
+
+    document.write("<br/>")
+    var lungime=window.prompt("lungimea dreptungiului");
+    var latime=window.prompt("Latimea dreptungiului");
+    var latura=width.prompt("Latura patratului");
+    var aria_dreptunghiului= lungime*latime;
+    var aria_patratului= latura*latura;
+    document.getElementById("l").innerHTML=aria_dreptunghiului + aria_patratului;
+
+
+
+</script>
+
+</body>
+</html>

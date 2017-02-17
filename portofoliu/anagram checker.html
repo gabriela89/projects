@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anagram Checker</title>
+</head>
+<body>
+<!--Example output
+Enter two strings and I'll tel you if they are anagrams;
+Enter the first-string:note
+Enter the second-string:tone
+"note and "tone are anagrams!-->
+
+<form id="firstform" name="myForm" method="post">
+    Enter two strings and I'll tell you if they are anagrams:<br/>
+    Enter the first string:
+    <input id="first" type="text" name="first_string" required><br/>
+    Enter the second string:
+    <input id="second" type="text" name="second_string" required>
+    <button type="button" name="Compare" onclick="compareString()"></button>
+</form>
+<p id="test"></p>
+
+<script>
+    function compareString() {
+        var str1=document.getElementById('first').value;
+        var str2=document.getElementById('second').value;
+
+    }
+    var x=str1.toLowerCase().split('').sort().join('').trim();
+    var y=str2.toLowerCase().split('').sort().join('').trim();
+    document.getElementById('test').innerHTML=str1.toLowerCase().split('');
+    document.getElementById('test').innerHTML=str1.toLowerCase().split('').sort();
+    document.getElementById('test').innerHTML=str1.toLowerCase().split('').sort().join('').trim();
+
+    var regularize=function (str) {
+        return str.toLowerCase().split('').sort().join('').trim();
+
+    var x=regularize(str1);
+    var y=regularize(str2);
+    if(x===y){
+        this.isAnagram = true;
+        document.getElementById('test').innerHTML='"'+ str1+ '"'+" and"+'"'+ str2+ '"'+"are anagrams.";
+    }
+    else{
+        this.isAnagram= false;
+        document.getElementById('test').innerHTML='"'+ str1+ '"'+" and"+'"'+ str2+ '"'+"are not anagrams.";
+    }
+    }
+</script>
+</body>
+</html>

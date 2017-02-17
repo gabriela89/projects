@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function openWindow() {
+            var newWindow= window.open('','sampleWinow','width=400,height=100,menubar=yes,status=yes,resizable=no');
+            newWindow.document.write('<html><head><title>Sample Title</title></head><body><h1>Sample Text</h1></body>')
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="Open Window" onclick="openWindow()"/>
+
+</body>
+</html>

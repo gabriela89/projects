@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form onsubmit="return false">
+    What is your current age?
+    <br>
+    <input type="text" value="" id="currentAge">
+    <br>
+    At what age would you like to retire?
+    <br>
+    <input type="text" value="" id="preferredRetirementAge">
+    <br>
+    <input type="submit" value="Enter" name="button" onclick="calculateAge()">
+</form>
+
+<p id="yearsLeft"></p>
+<p id="retirementYear"></p>
+
+<script>
+function calculateAge() {
+var currentAge = document.getElementById("currentAge").value;
+var preferredRetirementAge = document.getElementById("preferredRetirementAge").value;
+var yearsLeft = preferredRetirementAge - currentAge;
+var retirementYear = 2015 + yearsLeft;
+document.getElementById("yearsLeft").innerHTML = "You have " + yearsLeft + " years left until you can retire.";
+document.getElementById("retirementYear").innerHTML = "It's 2015, so you can retire in " + retirementYear + ".";
+}
+</script>
+</body>
+</html>

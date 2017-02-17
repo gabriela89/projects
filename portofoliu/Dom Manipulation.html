@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function change(state){
+        var lampImg = document.getElementById("lamp");
+        lampImg.src= "lamp_"+ state + ".png";
+        statusDiv.innerHTML = "The lamp is <b>" + state + "</b>.";
+        }
+    </script>
+</head>
+<body>
+<img id="lamp" src="lamp_on.png" onmouseover="change('off')" onmouseout="change('on')"/>
+<div id="statusDiv">Move the mouse over the lamp</div>
+</body>
+</html>

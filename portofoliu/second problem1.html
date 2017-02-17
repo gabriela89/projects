@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input#counter{
+            border: 0;
+            font-size: 13px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var input_string=null;
+        function countChars(){
+            input_string=document.getElementById('count').value;
+            res=input_string.length;
+            console.log(input_string +' has '+ input_string.length +' characters');
+            document.getElementById('result').innerHTML=input_string + 'has' + res +"characters";
+            document.getElementById('counter').value=res;
+        }
+
+        do{
+            input_string=window.prompt("What is your input string?");
+        }
+        while(input_string===null);
+        document.write(input_string + " has " + input_string.length + " characters long!")
+
+        function IsEmpty(){
+            if(document.getElementById('count').value=='')
+            {
+                document.getElementById('result').innerHTML="Please enter something";
+
+            }
+            return;
+        }
+        function startTimer() {
+            setTimeout('countChars()', 1000);
+        }
+
+    </script>
+</head>
+<body>
+<form id="formCount" method="POST">
+    <label for="count">What is your input string</label>
+    <input type="text" id="count" onclick="IsEmpty();" onfocus="IsEmpty();" onkeypress="startTimer();"/>
+<input type="text" id="counter" readonly="readonly"/>
+
+
+
+
+</form>
+<p id="result"></p>
+</body>
+</html>

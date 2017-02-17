@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var number = prompt("Enter number", 100);
+    document.write("Using for-loop: ");
+    for (i=0; i<number; i++)
+    {
+        document.write(i = " ");
+    }
+    document.write("<br/>");
+    document.write("Using while loop: ");
+    i=0;
+    while(i< number) {
+        document.write(i = " ");
+        i++;
+    }
+    document.write("<br/>");
+    document.write("Using for... in(foreach)loop:");
+    var langs= ["C#", "Java","PHP"];
+    for(var langIndex in langs){
+        document.write(langs[langIndex]+ " ");
+    }
+
+
+
+
+</body>
+</html>

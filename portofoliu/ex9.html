@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="myInput" type="text" value="BMW">
+<p id="demo1"></p>
+<script>
+var text;
+var favCar=document.getElementById("myInput").value;
+switch (favCar){
+case"BMW":
+text="German car";
+break;
+case"Ford":
+text="American car";
+break;
+case"Peugeut":
+text="French car";
+break;
+}
+document.getElementById("demo1").innerHTML=text;
+</script>
+</body>
+</html>

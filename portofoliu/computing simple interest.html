@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="interest"></p>
+<p id="final"></p>
+<script>
+    var Principal=window.prompt("Enter the principal: ");
+    var rate=window.prompt("Enter the rate of interest: ");
+    var time=window.prompt("Enter the number of years: ");
+    var r= Math.ceil(4,3);
+    var d=r*time;
+    var B=Principal*(100+d);
+
+    var A=B/100;
+
+document.getElementById("interest").innerHTML="Enter the principal: "+Principal+"</br>"+"Enter the rate of interest: "+rate+"<br/>"+"Enter the number of years: "+time+"<br/>";
+document.getElementById("final").innerHTML= "After" + time+ "years at"+ rate +"%"+", the investment will be worth $"+ A;
+</script>
+</body>
+</html>

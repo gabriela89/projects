@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Retirement calculator</p>
+<button onclick="Retirement()">Start</button>
+<p id="output"></p>
+<script>
+    function Retirement() {
+        var person= prompt("Age?", "00");
+        var retire=prompt("Retire?","00");
+        var year=new Date().getFullYear();
+        var diff= retire-person+year;
+        if (person != null){
+            document.getElementById('output').innerHTML="your age is:" + person +
+                "You want to retire at"+retire+
+                "you have" +(retire-person)+"years left untill you can retire<br>"+"It's"+year+",so you can retire in"+diff+".";
+        }
+    }
+</script>
+</body>
+</html>

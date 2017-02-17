@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML="Page location is: "+ window.location.href;
+</script>
+<p id="demo1"></p>
+<script>
+    document.getElementById("demo1").innerHTML="Page location is: "+ window.location.hostname;
+</script>
+<p id="demo2"></p>
+<script>
+    document.getElementById("demo2").innerHTML="Page location is: "+ window.location.pathname;
+</script>
+<p id="demo3"></p>
+<script>
+    document.getElementById("demo3").innerHTML="Page location is: "+ window.location.protocol;
+</script>
+<script>
+    function newDoc() {
+        window.location.assign("http://www.uaic.ro")
+    }
+</script>
+<input type="button" value="Load new document" onclick="newDoc()"><!--window.location.assign()method loads a new document-->
+</body>
+</html>

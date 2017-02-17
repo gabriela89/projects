@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+    </style>
+    <script>
+        function onElementHover(event) {
+            var element= document.getElementById('my_span');
+            element.style.backgroundColor= "#C0C0FF";
+            //element.innerHTML=" Mouse X: "+ (event.pageX||event.clientX)+
+                 //   "; Mouse Y: "+ (event.pageY||event.clientY);//
+            //event.screenX,event.screenY-global(screen)coordinates???
+            element.innerHTML= "Mouse X:"+ event.screenX+ "Mouse Y"+ event.screenY;
+        }
+        function onElementUnhover(event){
+            var element=document.getElementById('my_span');
+            element.style.backgroundColor="";
+            element.innerHTML="place your mouse over here again";
+        }
+
+    </script>
+</head>
+<body>
+<!--event for real time position of the mouse???-->
+<span id="my_span" onmousemove="onElementHover(event)"
+      onmouseout="onElementUnhover(event)">Place your mouse over here</span>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide 65</title>
+</head>
+<body>
+<p id="demo">Use the DOM to change my text</p>
+<p id="demo1">Use the DOM to change my text</p>
+<p class="test">Use the Dom to change my text</p>
+<p> </p>
+<p>Use the Dom to change my text</p>
+<script>
+
+   document.getElementsByTagName("p")[4].innerHTML="Good job";
+
+
+   document.getElementsByClassName("test")[0].innerHTML="Good job!";
+
+    document.querySelectorAll("p")[3].innerHTML="Good job!";
+
+</script>
+<script>
+    document.getElementById("demo").innerHTML = "The title of this document is:" + document.getElementsByTagName("title")[0].innerText;
+    document.getElementById("demo1").innerHTML = "The title of this document is:" + " " + document.title;
+
+    var x = document.head.childNodes[3].innerHTML;
+    document.getElementById("demo").innerHTML = x;
+</script>
+
+
+</body>
+</html>

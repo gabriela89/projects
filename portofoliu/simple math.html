@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="myForm" id="form" onsubmit="return false">
+    What's the first number?:
+    <input type="number" value="" id="first">
+    <br>
+    What's the second number?:
+    <input type="number" value="" id="second">
+    <input type="submit" value="Enter" name="button" onClick="maths()">
+</form>
+
+<p id="add"> </p>
+<p id="subtract"> </p>
+<p id="multiply"> </p>
+<p id="divide"> </p>
+
+
+<script>
+    function maths() {
+        var firstNumberValue = document.getElementById("first").value;
+        var secondNumberValue = document.getElementById("second").value;
+        var firstNumber = parseInt(firstNumberValue);
+        var secondNumber = parseInt(secondNumberValue);
+        if (isNaN(firstNumber) === false && isNaN(secondNumber) === false){
+            print(firstNumber, secondNumber);
+        }
+        else {
+            alert('You need to enter numbers!');
+        }
+    }
+
+    function print(firstNumber, secondNumber){
+        var addition = firstNumber + secondNumber;
+        var subtraction = firstNumber - secondNumber;
+        var division = firstNumber/secondNumber;
+        var multiplication = firstNumber * secondNumber;
+        document.getElementById("add").innerHTML = firstNumber + " + " + secondNumber +  " = " + addition;
+        document.getElementById("subtract").innerHTML = firstNumber + " - " + secondNumber +  " = " + subtraction;
+        document.getElementById("divide").innerHTML = firstNumber + " / " + secondNumber +  " = " + division;
+        document.getElementById("multiply").innerHTML = firstNumber + " x " + secondNumber +  " = " + multiplication;
+    }
+</script>
+</body>
+</html>

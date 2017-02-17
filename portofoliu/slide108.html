@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--inputfield,must:a)NOT be empty; b)contain only alphanumeric characters and spaces only if both tests are passed the form will be submitted(when the script return a value of true)-->
+</head>
+<body>
+<script>
+    function checkForm(form) {
+        //validation fails if the input is blank
+        if(form.inputfield.value==""){
+            alert("Error: Input is empty!");
+            form.inputfield.focus();
+            return false;
+        }
+        //regular expression to match only alphanumeric characters and spaces
+        var re=/^[\w]+$/;
+        //\w represents any alphanumeric character or the '_'
+        //^[\w]+$ will fail if the input is empty as it requires at least one character
+        if(!re.test(form.inputfield.value)){
+            alert("Error: Input contains invalid characters!");
+            form.inputfield.focus();
+            return false;
+        }
+        //validation was successful
+        return true;
+    }
+</script>
+<form method="post" action="#" onsubmit="return checkForm(this);">
+    <p>Input: <input type="text" size="32" name="inputfield">
+        <input type="submit"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="car">content</p>
+<p id="number"></p>
+<p id="sum">x+y</p>
+<p id="demo"></p>
+<script>
+    var carName="Honda";
+    document.getElementById("car").innerHTML=carName;
+    document.write('<br/>');
+    var number="50";
+    document.getElementById("number").innerHTML=number;
+    document.write('<br/>');
+        var x= 5;
+        var y= 10;
+
+    document.getElementById("sum").innerHtml= x+y;
+    document.write('<br/>');
+    var z= x + y;
+    document.getElementById("sum").innerHTML= z;
+    document.write('<br/>');
+
+    var firstName= 'John', lastName= 'Vangelis', age= '35';
+    document.getElementById("demo").innerHTML= firstName + "" +lastName  + "is" + age;
+
+
+
+
+</script>
+
+</body>
+</html>

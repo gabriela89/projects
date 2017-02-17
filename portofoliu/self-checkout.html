@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="checkout"></p>
+<p id="subtotal"></p>
+<p id="tax"></p>
+<p id="total"></p>
+<script>
+    var item1=window.prompt("Enter the price of item 1:");
+    var quantity1=window.prompt("Enter the quantity of item 1:");
+    var item2=window.prompt("Enter the price of item 2:");
+    var quantity2=window.prompt("Enter the quantity of item 2:");
+    var item3=window.prompt("Enter the price of item 3:");
+    var quantity3=window.prompt("Enter the quantity of item 3:");
+    document.getElementById("checkout").innerHTML="Enter the price of item1: "+"$"+ item1+"<br/>"+"Enter the quantity of item 1: "+ quantity1+"<br/>"+"Enter the price of item 2: "+"$"+item2+"<br/>"+"Enter the quantity of item 2: "+ quantity2+"<br/>"+"Enter the price of item 3: "+"$"+item3+"<br/>"+"Enter the quantity of item 3: "+ quantity3;
+    var subtotal_item1=item1*quantity1;
+    var subtotal_item2=item2*quantity2;
+    var subtotal_item3=item3*quantity3;
+document.getElementById("subtotal").innerHTML="Subtotal: "+ "$"+(subtotal_item1+subtotal_item2+subtotal_item3);
+
+    var subtotal_final=subtotal_item1+subtotal_item2+subtotal_item3;
+    var tax=subtotal_final*(5,5/100);
+    document.getElementById("tax").innerHTML="Tax: "+"$"+tax;
+    var total=tax + subtotal_final;
+    document.getElementById("total").innerHTML="Total: "+"$"+total;
+</script>
+</body>
+</html>

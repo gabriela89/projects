@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="name" name="name"/>
+    <input type="button" value="sayHello" onclick="check()"/>
+</form>
+<script>
+    var name= document.getElementById("name").value;
+    var div= document.createElement("div");
+    var greeting="Hello, "+ name + ",nice to meet you..";
+    var textNode= document.createTextNode(greeting);
+    div.appendChild(textNode);
+    document.body.appendChild(div)
+
+    function hello(){
+        var name= document.getElementById("name").value;
+        var div= document.createElement("div");
+        //var greeting="Hello, "+ name + ",nice to meet you..";
+        var textNode= document.createTextNode(greeting);
+        div.appendChild(textNode);
+        document.body.appendChild(div);
+
+    }
+    function check(){
+        //var greeting="Hello, "+ name + ",nice to meet you..";
+        var name= document.getElementById("name").value;
+        if(name.length<3){
+            greeting="Hello, "+ name + ",nice to meet you...you have a short name";
+            hello();
+        }
+
+        else if(name.length>=3 & name.length<8) {
+
+           greeting="Hello, " + name + ",nice to meet you...you have a medium name";
+            hello();
+        }
+
+        else if(name.length>8) {
+          greeting="Hello, " + name + ",nice to meet you...you have a long name";
+            hello();
+        }
+    }
+</script>
+</body>
+</html>

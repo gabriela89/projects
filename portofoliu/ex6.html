@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+    var txt= "Hello World";
+    var pos =txt.indexOf("World");
+    document.getElementById('demo').innerHTML = pos;
+    var str="Apple,Banana,Kiwi";
+    document.getElementById("demo1").innerHTML= str.slice(6,17);
+    var txt= "Hello World!";
+    document.getElementById("demo2").innerHTML= txt.replace("World", "Universe");
+    var txt= "Hello World!";
+    document.getElementById("demo3").innerHTML= txt.toUpperCase();
+    var str1="Hello";
+    var str2="World!"
+    document.getElementById("demo4").innerHTML = str1.concat(" ",str2);
+
+
+
+</script>
+
+</body>
+</html>
