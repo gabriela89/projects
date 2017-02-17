@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .redBackgroundClass{
+            background: red;
+        }
+        .greenForegroundClass{
+            color: green;
+        }
+    </style>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<p>some &ltp&gt with <a>some &lta&gt</a></p>
+<p>some &ltp&gt with <a>some &lta&gt</a></p>
+<p>some &ltp&gt with <a>some &lta&gt</a></p>
+<p>some &ltp&gt with <a>some &lta&gt</a></p>
+<p>some &ltp&gt with <a>some &lta&gt</a></p>
+<script>
+    $("body")
+        .find('p')
+        .fine('a')
+        .addClass('redBackgroundClass')
+        .end()
+        .addClass('greenForegroundClass')
+        .end()
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <style>
+        .somethingWithClickEvent{
+            background-color: yellow;
+            width: 80px;
+            padding: 5px;
+            font-size: 16pt;
+        }
+    </style>
+</head>
+<body>
+<div>Click Me</div>
+<div>Click Me</div>
+<div>Click Me</div>
+<div>Click Me</div>
+<div>Click Me</div>
+<script>
+    $('div')
+        .addClass('somethingWithClickEvent')
+        .click(function () {
+            alert('You clicked a div!')
+        });
+
+
+</script>
+</body>
+</html>
