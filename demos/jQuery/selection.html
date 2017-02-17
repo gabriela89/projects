@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<button id="addTextDynamicallyToColoredDivs">Click to add dynamically text to the colored divs</button>
+<button id="addTextDynamicallyToAllDivs">Click to add dynamically text to all divs</button>
+<button id="removePTags">Click to remove all &ltp&gt tags</button>
+<div class="someDiv 0" style="width: 70px; background: red">Some text</div>
+<div class="someDiv 1" style="width: 70px; background: green">Some text</div>
+<div class="someDiv 1" style="width: 70px; background: yellow">Some text</div>
+<div>Just another div</div>
+<script>
+    $("#addTextDynamicallyToColoredDivs").click(function () {
+        $(".someDiv").append("<p>dynamically added text only to colored divs</p>");
+    });
+    $("#addTextDynamicallyToAllDivs").click(function () {
+        $("<p>dynamically added text  to all divs</p>").appendTo('div');
+    });
+    $("#removePTags").click(function () {
+        $('p').remove();
+    });
+
+</script>
+</body>
+</html>
