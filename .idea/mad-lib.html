@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="myForm" id="form" onsubmit="return false">
+    Enter a noun:
+    <input type="text" value="" id="noun">
+    <br>
+    Enter an adjective:
+    <input type="text" value="" id="adjective">
+    <br>
+    Enter a verb:
+    <input type="text" value="" id="verb">
+    <br>
+    Enter an adverb:
+    <input type="text" value="" id="adverb">
+    <br>
+    <input type="submit" value="Enter" name="button" onClick="makeSentence()">
+</form>
+
+<p id="sentence"></p>
+<script>
+
+    function makeSentence() {
+        var noun = document.getElementById("noun").value;
+        var verb = document.getElementById("verb").value;
+        var adjective = document.getElementById("adjective").value;
+        var adverb = document.getElementById("adverb").value;
+        document.getElementById("sentence").innerHTML = "The " + adjective + " " + noun + " " + adverb + " " + verb + " the chair.";
+        form.reset();
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="sentence"></p>
+<form name="myForm" id="form" onsubmit="return false">
+    "What is the quotes?"
+    <input type="text" value id="quote">
+    "Who said it?"
+    <input type="text" value id="author">
+    <input type="submit" value="Enter" name="button" onclick="getSentence()">
+</form>
+<script>
+    function getSentence(){
+        var quote = document.getElementById("quote").value;
+        var author = document.getElementById("author").value;
+        document.getElementById("sentence").innerHTML = author +" "+ 'said: ' + quote +"?" ;
+        form.reset();
+    }
+
+
+</script>
+<script>
+    var quotes=['quote1','quote2','quote3','quote4'];
+    var authors=['author1','author2','author3','author4'];
+    for(i=0;i<quotes.length;i++){
+        document.write(authors[i]+'says','+''\''+qiotes[i]+'\''+'<br>');
+    }
+    <!--sa folosim elemente select,option!-->
+</script>
+</body>
+</html>

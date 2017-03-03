@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    var people=window.prompt("How many people?");
+    var pizzas=window.prompt("How many pizzas do you have?");
+    var slices=window.prompt("Hoe many slices does each pizza have?");
+    var product= (pizzas* slices);
+    var quotient= (product/people);
+    var remainder= (product% people);
+    console.log(people, "people with", pizzas, "pizzas\n", "each person gets", quotient, "pieces of pizza\n", "there are", remainder, "leftover pieces");
+    document.write("demo").innerHTML="people('people with')"+"pizzas"
+</script>
+
+</body>
+</html>
