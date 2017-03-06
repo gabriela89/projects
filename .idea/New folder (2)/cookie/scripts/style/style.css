@@ -1,0 +1,66 @@
+.logo{
+    
+    height:50px;
+    background-color: #596e9b;
+    cursor:pointer;
+}
+.logo:hover{
+    background-color: #7591cc;
+}
+.bar{
+    height: 50px;
+    background-color: #7591cc;
+}
+.action{
+    height: 50px;
+    background-color: #96ad42;
+    text-align: center;
+}
+.action-text{
+    color: white;
+    font-size: 20px;
+   margin-top: 10px;
+    display: inline-block;
+    
+}
+.action-text:hover{
+    opacity: 0.6;
+}
+body{
+    background-color: lightgrey;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    background-color: white;
+    border-radius: 10px;
+    
+    
+}
+.login-text{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 26px;
+    margin-left:42%;
+}
+.line{
+    background-color:black;
+    height: 2px;
+    margin-top: 30px;
+  
+}
+.custom-label{
+    margin-top: 30px;
+    font-size: 15px;
+    margin-left:100px;
+}
+.custom-input{
+    margin-top: 30px;
+    font-size: 15px;
+    padding-left: 10px;
+    width: 120px;
+    margin-left: 30px;
+}
